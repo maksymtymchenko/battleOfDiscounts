@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="130" height="130" viewBox="0 0 130 130">
+  <defs>
+    <clipPath id="clip-path">
+      <circle id="Эллипс_1" data-name="Эллипс 1" cx="65" cy="65" r="65" transform="translate(494 1120)" fill="none" stroke="#e8e8e8" stroke-width="6"/>
+    </clipPath>
+  </defs>
+  <g id="Эллипс_1-2" data-name="Эллипс 1" transform="translate(-494 -1120)">
+    <g id="Эллипс_1-3" data-name="Эллипс 1" transform="translate(494 1120)" fill="none" stroke="#e8e8e8" stroke-width="6">
+      <circle cx="65" cy="65" r="65" stroke="none"/>
+      <circle cx="65" cy="65" r="62" fill="none"/>
+    </g>
+    <g id="Clip" clip-path="url(#clip-path)">
+      <path id="Прямоугольник_10" data-name="Прямоугольник 10" d="M558,1087l85,75-37,101-48-60Z" fill="#43a8f6"/>
+    </g>
+  </g>
+</svg>
