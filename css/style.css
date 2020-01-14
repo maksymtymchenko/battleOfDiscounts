@@ -291,3 +291,102 @@ body {
   line-height: 60px;
   font-size: 16px;
 }
+
+.partners {
+  background-image: url("/images/partners/bg.jpg");
+  background-position: top;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+.partners_wrapper {
+  text-align: center;
+  padding-top: 80px;
+}
+
+.partners_wrapper-title {
+  display: inline-block;
+  margin-bottom: 60px;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, rgba(0, 0, 0, 0)), color-stop(50%, white));
+  background: -webkit-linear-gradient(rgba(0, 0, 0, 0) 50%, white 50%);
+  background: -o-linear-gradient(rgba(0, 0, 0, 0) 50%, white 50%);
+  background: linear-gradient(rgba(0, 0, 0, 0) 50%, white 50%);
+  padding: 0 15px;
+}
+
+.partners_wrapper-title h2 {
+  font-size: 32px;
+  line-height: 43px;
+  font-weight: 400;
+  letter-spacing: 3px;
+}
+
+.partners_wrapper p {
+  font-size: 15px;
+  line-height: 20px;
+  font-weight: 400;
+}
+
+.partners_wrapper-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin: 80px 0 80px 0;
+  cursor: pointer;
+}
+
+.partners_wrapper-items .partners_item img {
+  margin-bottom: 25px;
+}
+
+.partners_wrapper-items .partners_item span {
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: 400;
+}
+
+.partners_wrapper-items .partners_item:hover {
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+.partners_wrapper-items .partners_item:hover span {
+  font-weight: 700;
+}
+
+.partners_wrapper-text {
+  margin-bottom: 45px;
+}
+
+.partners_wrapper-text span {
+  font-size: 26px;
+  line-height: 29px;
+  font-weight: 400;
+}
+
+.partners_btn {
+  width: 100%;
+  max-width: 230px;
+  height: 60px;
+  margin: 0 auto;
+  background-color: #d60505;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.partners_btn:hover {
+  background-color: #ae0404;
+}
+
+.partners_btn a {
+  color: #ffffff;
+  line-height: 60px;
+  font-size: 16px;
+}
