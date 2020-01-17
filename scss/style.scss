@@ -33,21 +33,6 @@ body {
     max-width: 1100px;
 }
 
-// Active class for nav items
-.active_nav {
-    color: red;
-    font-weight: 700;
-}
-
-// Burger Menu
-.burger_menu {
-    display: none;
-
-    & fas {
-        font-size: 21px;
-    }
-}
-
 //HEADER
 
 .header {
@@ -62,6 +47,7 @@ body {
     }
 
     &_nav {
+
         &-link {
             font-size: $navFz;
             font-weight: 400;
@@ -148,6 +134,70 @@ body {
             line-height: 60px;
             font-size: 16px;
         }
+    }
+}
+
+// Active class for nav items
+.active_nav {
+    color: red;
+    font-weight: 700;
+}
+
+// Burger Menu
+.burger_menu {
+    display: none;
+    position: relative;
+    z-index: 10;
+    cursor: pointer;
+
+    & fas {
+        font-size: 40px;
+    }
+}
+
+// Media queries for header section
+
+@media only screen and (max-width: 767px) {
+    .burger_menu {
+        display: block;
+        position: fixed;
+        top: 50px;
+        right: 50px;
+
+        & fas {
+            font-size: 40px;
+        }
+    }
+
+    .header_nav {
+        display: none;
+        position: relative;
+        z-index: 5;
+    }
+
+    .header_wrapper {
+        padding: 15px;
+    }
+
+    .header {
+        position: relative;
+    }
+
+    .adaptive_nav {
+        position: fixed;
+        top: 0;
+        right: 0;
+        display: block;
+        background-color: rgba(242, 255, 0, 0.8);
+        width: 100%;
+        height: 100%;
+    }
+
+    .header_nav-link {
+        margin-top: 10%;
+        font-size: 2em;
+        display: block;
+        text-align: center;
     }
 }
 
@@ -265,7 +315,6 @@ body {
     margin-top: 65px;
     text-align: center;
 
-
     & span {
         font-size: 30px;
         line-height: 36px;
@@ -295,11 +344,10 @@ body {
     }
 }
 
-
 // Partners
 
 .partners {
-    background-image: url('/images/partners/bg.jpg');
+    background-image: url("/images/partners/bg.jpg");
     background-position: top;
     background-repeat: no-repeat;
     height: 100vh;
@@ -328,7 +376,6 @@ body {
         line-height: 20px;
         font-weight: 400;
     }
-
 
     &-items {
         @include flex();

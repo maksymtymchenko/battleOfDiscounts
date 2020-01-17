@@ -19,3 +19,11 @@ for (let i = 0; i < links.length; i++) {
 
     })
 }
+
+
+const burgerMenu = document.querySelector('.burger_menu');
+const headerNav = document.querySelector('.header_nav');
+
+burgerMenu.addEventListener('click', () => {
+    headerNav.classList.toggle('adaptive_nav')
+})
