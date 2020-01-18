@@ -43,7 +43,14 @@ body {
 
     &_wrapper {
         @include flex();
-        padding-top: 10px;
+        padding: 10px;
+    }
+
+    &_logo {
+        & .logo {
+            width: 100%;
+            max-width: 290px;
+        }
     }
 
     &_nav {
@@ -64,34 +71,32 @@ body {
 
 .header_content {
     text-align: center;
-    margin-top: 70px;
+    margin-top: 30px;
 
     &-participant {
-        margin-bottom: 35px;
-        cursor: pointer;
+        margin-bottom: 30px;
 
         & span {
-            padding: 10px 35px;
+            padding: 10px 30px;
             background-color: $otherTextColor;
-            font-size: 24px;
-            line-height: 28px;
+            font-size: 22px;
+            line-height: 20px;
             font-weight: 400;
         }
     }
 
     &-title {
-        margin-bottom: 35px;
+        margin-bottom: 30px;
 
         & h1 {
-            font-size: 70px;
+            font-size: 60px;
             text-transform: uppercase;
             color: $otherTextColor;
         }
     }
 
     &-city {
-        margin-bottom: 35px;
-        cursor: pointer;
+        margin-bottom: 30px;
         transform: rotate(-2deg);
 
         & span {
@@ -99,18 +104,18 @@ body {
             padding: 5px 15px;
             background-color: #008aff;
             color: $otherTextColor;
-            font-size: 24px;
-            line-height: 28px;
+            font-size: 22px;
+            line-height: 20px;
             font-weight: 400;
         }
     }
 
     &-decription {
-        margin-bottom: 60px;
+        margin-bottom: 25px;
 
         p {
             font-size: 16px;
-            line-height: 22px;
+            line-height: 20px;
             color: $mainTextColor;
             font-weight: 400;
         }
@@ -155,9 +160,33 @@ body {
     }
 }
 
-// Media queries for header section
+// Media queries 
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 1050px) {
+    .header {
+
+
+        &_wrapper {}
+
+        &_nav {
+            flex-wrap: wrap;
+
+            &-link {
+                font-size: $navFz - 2;
+                line-height: 8px;
+                margin-left: 15px;
+
+                &:first-child {}
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .header_logo {
+        margin-right: 120px;
+    }
+
     .burger_menu {
         display: block;
         position: fixed;
@@ -165,6 +194,7 @@ body {
         right: 50px;
 
         & fas {
+
             font-size: 40px;
         }
     }
@@ -177,6 +207,8 @@ body {
 
     .header_wrapper {
         padding: 15px;
+        display: flex;
+        justify-content: space-between;
     }
 
     .header {
@@ -194,12 +226,110 @@ body {
     }
 
     .header_nav-link {
-        margin-top: 10%;
+        margin-top: 15%;
         font-size: 2em;
         display: block;
         text-align: center;
+
+        &:first-child {
+            margin-top: 30%;
+        }
     }
 }
+
+@media only screen and (max-width: 771px) {
+    .header_content {
+        padding: 25px;
+        margin-top: 25px;
+
+        &-participant {
+            margin-bottom: 25px;
+
+            & span {
+                padding: 10px 35px;
+                background-color: $otherTextColor;
+                font-size: 24px - 2;
+                line-height: 18px;
+            }
+        }
+
+        &-title {
+            margin-bottom: 30px;
+
+            & h1 {
+                font-size: 3em;
+                text-transform: uppercase;
+                color: $otherTextColor;
+            }
+        }
+
+        &-city {
+            margin-bottom: 35px;
+            transform: rotate(-2deg);
+
+            & span {
+                font-size: 24px - 2;
+                line-height: 18px;
+                font-weight: 400;
+            }
+        }
+
+        &-decription {
+            margin-bottom: 30px;
+
+            p {
+                font-size: 16px - 2;
+                line-height: 14px;
+            }
+        }
+
+        &-btn {
+            width: 100%;
+            max-width: 200px;
+            height: 60px;
+            margin: 0 auto;
+            background-color: #d60505;
+            border-radius: 10px;
+            cursor: pointer;
+
+            &:hover {
+                background-color: darken(#d60505, 8%);
+            }
+
+            a {
+                color: $otherTextColor;
+                line-height: 60px;
+                font-size: 16px - 2;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 635px) {
+    .header_content {
+        &-decription {
+
+            p {
+                font-size: 16px - 4;
+                line-height: 12px;
+            }
+        }
+    }
+}
+
+
+@media only screen and (max-width: 555px) {
+    .header_content {
+        &-decription {
+            display: none;
+        }
+    }
+
+    &-btn {
+        margin-top: 60px;
+    }
+}
+
 
 // Terms
 
