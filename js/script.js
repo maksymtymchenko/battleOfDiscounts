@@ -1,3 +1,5 @@
+// Add active class for navigation links
+
 let links = document.getElementsByClassName('header_nav-link');
 console.log(links)
 
@@ -21,6 +23,7 @@ for (let i = 0; i < links.length; i++) {
 }
 
 
+// Burger menu
 const burgerMenu = document.querySelector('.burger_menu');
 const headerNav = document.querySelector('.header_nav');
 
