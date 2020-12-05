@@ -23,7 +23,7 @@ for (let i = 0; i < links.length; i++) {
 }
 
 
-// Burger menu
+// Burger menu init
 const burgerMenu = document.querySelector('.burger_menu');
 const headerNav = document.querySelector('.header_nav');
 
